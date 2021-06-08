@@ -1,2 +1,3 @@
 added new file
 publish again after cloning
+try publish again with cloud
