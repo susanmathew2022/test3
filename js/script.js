@@ -155,12 +155,12 @@ const cars = ["Saab", "Volvo", "BMW"];
     cardisplay += "</ul>";
 
 
+const shoppinglist = ["milk", "banana", "bread", "oats"]
 
-
-
-
-
-
+const newlist =shoppinglist.map((item, index)=>item + index);
+  console.log(newlist);
+const itemfilter = shoppinglist.filter((item, index)=>item === "banana");
+console.log(itemfilter);
 
 //Display Function to display in the page
 function display(){
