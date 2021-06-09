@@ -31,7 +31,7 @@ console.log(bookdetails);
 console.log(bookdetails.title);
 console.log(bookdetails.author);
 console.log(bookdetails.pages); */
-let books = 
+const books = 
     {
       "isbn": "9781593275846",
       "title": "Eloquent JavaScript, Second Edition",
@@ -85,7 +85,7 @@ const mylocation = (location)=>{
 mylocation("paris");
 
 //Old Code
-const user = {
+/* const user = {
     name:"Susan",
     age:"37",
     sayName: function(){
@@ -97,7 +97,7 @@ const user = {
         mydetails();
     }
 }
-user.sayName();
+user.sayName(); */
 
 // New way of coding
 const newuser = {
@@ -123,16 +123,47 @@ newuser.sayName();
 }  */
 
 
+//ES6
 function Multiply(a=1,b=1){
     const cal =`Multiply ${a*b}`;
  return cal; 
    console.log(`Multiply ${a*d}`);
 } 
+//Multiply(20,20);
 
+
+// array accessing with foreach
+//old js
+ 
+const cars = ["Saab", "Volvo", "BMW"];
+
+/* cars.forEach(function(product){
+    console.log(product)
+}) */
+
+//Es6
+
+//cars.forEach((product)=>{ console.log(product)})
+
+
+    cardisplay = "<ul>";
+    cars.forEach((product, index)=>{
+         console.log(product);
+         cardisplay += "<li>" + product + "</li>";
+         //document.getElementById("demo").innerHTML = product;
+    });
+    cardisplay += "</ul>";
+
+
+
+
+
+
+
+
+
+//Display Function to display in the page
 function display(){
-    document.getElementById("demo").innerHTML = Multiply(20,20);
-}
-
-
-
-
+ document.getElementById("demo").innerHTML = Multiply(20,20);
+ document.getElementById("demo").innerHTML +=  cardisplay; 
+} 
